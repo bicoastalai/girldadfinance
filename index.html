@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Girl Dad Finance — smart money moves for dads raising daughters." />
+    <title>Girl Dad Finance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ── NAV ── -->
+    <header class="nav">
+      <a class="nav__logo" href="/">Girl Dad Finance</a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#newsletter" class="btn btn--sm">Get Updates</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ── HERO ── -->
+    <main>
+      <section class="hero" aria-label="Hero">
+        <div class="hero__card">
+          <div class="hero__image-wrap">
+            <img
+              src="assets/hero.png"
+              alt="Damon Leslie at the gym — founder of Girl Dad Finance"
+              class="hero__image"
+            />
+            <div class="hero__badge">Coming Soon</div>
+          </div>
+
+          <div class="hero__body">
+            <p class="hero__eyebrow">Personal Finance for Girl Dads</p>
+            <h1 class="hero__headline">
+              Raise great daughters.<br />
+              <span class="hero__accent">Build real wealth.</span>
+            </h1>
+            <p class="hero__sub">
+              Practical money strategies, dad-tested and daughter-approved.
+              Join the list and be first to know when we launch.
+            </p>
+
+            <!-- Email capture -->
+            <form
+              class="hero__form"
+              action="#"
+              method="post"
+              aria-label="Email sign-up"
+            >
+              <label for="email" class="visually-hidden">Email address</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="your@email.com"
+                required
+                autocomplete="email"
+                class="hero__input"
+              />
+              <button type="submit" class="btn btn--primary">Notify Me</button>
+            </form>
+            <p class="hero__disclaimer">No spam. Unsubscribe anytime.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> Girl Dad Finance. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
